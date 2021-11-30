@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logocovid.png">
+    <title>Covid-19 website Kon Tum</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo" style="font-weight: bold;">Kon Tum C<span class="fas fa-virus"></span>vid-19</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a class="active" href="#home">Trang chủ</a>
+        <a href="#news">Tin tức</a>
+        <a href="#prevent">Phòng ngừa</a>
+        <a href="#precautions">Biện pháp</a>
+        <a href="#symptoms">Triệu chứng</a>
+        <a href="#thongke">Thống kê</a>
+        <a href="#doctor">Tư vấn</a>
+        <a onclick="bam()">Đăng nhập</a>   
+    </nav>
+     <div id="cuasonen">
+            <button onclick="NhapDaux()">
+                <img src="images/close.png" width="22px">
+            </button>
+            <div id="cuasonoidung">
+                <div id="facebook">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/face.png" width="15px">
+                    </a>Kết Nối Với FaceBook
+                </div>
+                <div id="ggg">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm" target="_blank">
+                        <img src="images/gg.png" width="15px">
+                    </a>Kết Nối Với Google
+                </div>
+                <div>Hoặc đăng nhập bằng gmail</div>
+                <input type="textbox" id="nhapgmail" placeholder="Địa chỉ email hoặc url hồ sơ của bạn">
+                <div id="tieptuc">Tiếp Tục
+                </div>
+                <p>Chúng tôi có thể sử dụng email và thiết bị của bạn để cập nhật và mẹo về các sản phẩm và dịch vụ của SoundCloud cũng như thông báo về hoạt động. Bạn có thể hủy đăng ký miễn phí bất kỳ lúc nào trong cài đặt thông báo của mình.<br/><br/>Chúng tôi có thể sử dụng thông tin bạn cung cấp cho chúng tôi để hiển thị cho bạn các quảng cáo được nhắm mục tiêu như được mô tả trong Chính sách <br/></p> 
+                <p><span style="color: blue">Bảo mật của chúng tôi. Cần giúp đỡ</span></p>
+            </div>
+        </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h1>Tuân thủ biện pháp 5k</h1>
+        <h3>Tại nhà, giữ an toàn</h3>
+        <a href="#prevent" class="btn">Biện pháp phòng chống</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- news section starts  -->
+
+<section class="prevent" id="news">
+
+    <h1 class="heading"> Tin tức </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img style="width: 350px;height: 200px;" src="images/tin1.jpg" alt="">
+            <a href="newdetail.html" class=""><h3>Bộ Y tế rà soát chỉ định đối tượng xét nghiệm trong tình hình mới. Xét nghiệm đóng vai trò kiểm soát dịch</h3></a>
+            <p>Dự thảo Quyết định hướng dẫn đối tượng xét nghiệm SAR-CoV-2 tại bệnh viện và nguồn kinh phí chi trả bổ sung thêm một số trường hợp được chỉ định xét nghiệm như: người tới bệnh viện có nguy cơ cao sau khi phân luồng, sàng lọc tại cổng bệnh viện; người mắc bệnh mạn tính, bệnh nhân xạ trị, bệnh nhân chạy thận nhân tạo...</p>
+        </div>
+
+        <div class="box">
+            <img style="width: 350px;height: 200px;" src="images/tin2.jpg" alt="">
+            <h3>Chính phủ ban hành Quy định tạm thời "Thích ứng an toàn, linh hoạt, kiểm soát hiệu quả dịch COVID-19"</h3>
+            <p>Phó Thủ tướng Chính phủ Vũ Đức Đam vừa ký Nghị quyết số 128/NQ-CP của Chính phủ ban hành Quy định tạm thời "Thích ứng an toàn, linh hoạt, kiểm soát hiệu quả dịch COVID-19".Nghị quyết nêu: Tổ chức Y tế Thế giới, các nhà khoa học và các quốc gia nhận định dịch COVID-19 chưa thể kiểm soát được hoàn toàn trước năm 2023.</p>
+        </div>
+
+        <div class="box">
+            <img style="width: 350px;height: 200px;"  src="images/tin3.jpeg" alt="">
+            <h3>
+            Bộ Y tế: Địa phương nào tiêm chậm sẽ bị điều chuyển vaccine COVID-19 cho nơi khác </h3>
+            <p>Dự kiến từ nay đến hết tháng 10/2021, Bộ Y tế sẽ tiếp tục tiếp nhận và phân bổ cho các đơn vị, địa phương khoảng hơn 35 triệu liều vaccine COVID-19. Nếu địa phương nào để xảy ra chậm tiêm, Bộ Y tế sẽ chủ động điều chuyển vaccine cho nơi khác. Các tỉnh, thành phố về việc tiếp tục đẩy nhanh tiến độ tiêm chủng vaccine COVID-19.</p>
+        </div>
+
+        <div class="box">
+            <img style="width: 350px;height: 200px;"  src="images/tin4.jpeg" alt="">
+            <h3>Ngày 12/10: Chỉ có 2.949 ca mắc COVID-19 tại 43 địa phương, thấp nhất trong 2,5 tháng qua</h3>
+            <p>Sức khỏe đời sống - Bản tin dịch COVID-19 ngày 12/10 của Bộ Y tế cho biết có 2.949 ca mắc tại 43 tỉnh, thành phố, giảm 678 ca so với hôm qua. Đây cũng là số ca mắc mới thấp nhất trong 2,5 tháng qua. Số bệnh nhân được công bố khỏi trong ngày là 1.347 ca.</p>
+        </div>
+
+        <div class="box">
+            <img style="width: 350px;height: 200px;" src="images/tin5.jpeg" alt="">
+            <h3>Trưa 12/10: Đã tiêm gần 55,9 triệu liều vaccine COVID-19; Bến Tre, Tây Ninh ghi nhận thêm các ca F0</h3>
+            <p>SKĐS - Cập nhật trên Cổng tiêm chủng Quốc gia tính đến trưa ngày 12/10, cả nước đã tiêm 55.870.164 liều vaccine COVID-19; Bến Tre, Tây Ninh ghi nhận thêm các ca F0; 220 cán bộ, sinh viên ÐH Y Dược Cần Thơ xuất quân hỗ trợ Cần Thơ, Sóc Trăng chống dịch COVID-19.</p>
+        </div>
+
+        <div class="box">
+            <img style="width: 350px;height: 200px;" src="images/tin6.jpg" alt="">
+            <h3>Sẽ ban hành hướng dẫn tiêm vaccine phòng COVID-19 cho trẻ em từ 12-18 tuổi trước ngày 15/10</h3>
+            <p>Thứ trưởng Bộ Y tế Đỗ Xuân Tuyên cho biết, trước ngày 15/10 sẽ ban hành hướng dẫn tiêm vaccine phòng COVID-19 cho trẻ từ 12 đến dưới 18 tuổi.Từ 1-10/10 cả nước đã tiêm được 11 triệu liều vaccine. Bộ Y tế tổ chức Hội nghị trực tuyến với 63 tỉnh, thành nhằm đánh giá công tác tiêm vaccine phòng.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- news section end -->
+<!-- prevent section starts  -->
+<section class="prevent" id="prevent">
+
+    <h1 class="heading"> cách phòng ngừa virus </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/pre-1.png" alt="">
+            <h3>Diệt khuẩn tại nhà</h3>
+            <p>Đặc biệt với dịch bệnh covid-19 hay sar cov2 là vấn đề hiện trạng vi rút rất nguy hiểm. Việc phun khử khuẩn là việc làm tương đối cấp bách và cần thiết. Phu khử trùng bằng thuốc cloramin B.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/pre-2.png" alt="">
+            <h3>Duy trì khoảng cách</h3>
+            <p>Mọi người cần áp dụng các biện giãn cách xã hội - bao gồm việc giữ khoảng cách ít nhất 6 feet (khoảng 1,8 mét) với bất kỳ ai khi đi ra ngoài. Để đảm bảo an toàn cho bản thân và cộng đồng. </p>
+        </div>
+
+        <div class="box">
+            <img src="images/pre-3.png" alt="">
+            <h3>Đừng chạm vào mặt</h3>
+            <p>Chúng ta luôn được cảnh báo không chạm tay lên mặt, đặc biệt là mắt, mũi, miệng. Virus có thể xâm nhập vào cơ thể bạn thông qua việc bạn chạm vào mũi, miệng hoặc mắt bằng bàn tay bị nhiễm virus.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/pre-4.png" alt="">
+            <h3>Rửa tay thường xuyên</h3>
+            <p>Sau khi từ bên ngoài về nhà: Khi đi ra ngoài, bạn tiếp xúc với nhiều người, va chạm vào những đồ vật công cộng rất dễ nhiễm các loại vi khuẩn, do đó cần phải rửa tay sạch khi về nhà để bảo vệ cơ thể.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/pre-5.png" alt="">
+            <h3>Không dùng chung đồ</h3>
+            <p>Không dùng chung bát đĩa, ly uống nước, cốc hoặc dụng cụ ăn uống. Phải cầm các đồ dùng dịch vụ thực phẩm không dùng một lần đã sử dụng bằng găng tay và rửa bằng xà phòng và nước nóng.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/pre-6.png" alt="">
+            <h3>Đeo khẩu trang</h3>
+            <p>Covid lây truyền trực tiếp qua việc tiếp xúc không bảo vệ với giọt tiết mũi họng từ người ho, hắt hơi, sổ mũi vào đường hô hấp. Cần phải đeo khẩu trang đúng cách để đảm bảo ngăn ngừa dịch bệnh.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- prevent section ends -->
+<!-- precautions section starts  -->
+
+<section class="precautions" id="precautions">
+
+    <h1 class="heading">biện pháp phòng ngừa covid-19</h1>
+
+    <div class="column">
+
+        <div class="box-container">
+
+            <h3 class="title">những điều bạn NÊN LÀM</h3>
+
+            <div class="box">
+                <img src="images/do-img1.png" alt="">
+                <div class="info">
+                    <h3>Rửa tay thường xuyên</h3>
+                    <p>Khi đi ra ngoài, bạn tiếp xúc với nhiều người, va chạm vào những đồ vật công cộng rất dễ nhiễm các loại vi khuẩn, do đó cần phải rửa tay sạch khi về nhà để bảo vệ cơ thể!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/do-img2.png" alt="">
+                <div class="info">
+                    <h3>Luôn đeo khẩu trang</h3>
+                    <p>Covid lây truyền trực tiếp qua việc tiếp xúc không bảo vệ với giọt tiết mũi họng từ người ho, hắt hơi, sổ mũi vào đường hô hấp. Cần phải đeo khẩu trang đúng cách để đảm bảo ngăn ngừa dịch bệnh!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/do-img3.png" alt="">
+                <div class="info">
+                    <h3>Gọi ngay cho bác sĩ khi bị sốt</h3>
+                    <p>Nếu bị sốt, cảm thấy có những dấu hiệu của covid, hãy gọi ngay cho đường dây nóng của bộ y tế để được hướng dẫn cách theo dõi bệnh và biện pháp chữa trị tại nhà hoặc đến bệnh viện gần nhất!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-container">
+
+            <h3 class="title">những điều bạn KHÔNG NÊN LÀM</h3>
+
+            <div class="box">
+                <img src="images/dont-img1.png" alt="">
+                <div class="info">
+                    <h3>Tránh tiếp xúc gần với động vật</h3>
+                    <p>Báo cáo về động vật bị nhiễm SARS-CoV-2 đã được ghi lại ở khắp nơi trên thế giới. Hầu hết các động vật này đều nhiễm bệnh sau khi tiếp xúc với người mắc COVID-19!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/dont-img2.png" alt="">
+                <div class="info">
+                    <h3>Tránh tiếp xúc gần gũi với mọi người</h3>
+                    <p>Duy trì khoảng cách ít nhất 6 feet (khoảng 2 chiều dài cánh tay) với người khác. Giữ khoảng cách với người khác là điều rất quan trọng đối với những người có nguy cơ cao mắc bệnh nặng!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/dont-img3.png" alt="">
+                <div class="info">
+                    <h3>Tránh khu vực đông đúc</h3>
+                    <p>Quý vị có nguy cơ lây nhiễm COVID-19 cao khi ở nơi đông người như nhà hàng, quán bar, trung tâm thể thao hoặc rạp chiếu phim. Tránh không gian trong nhà không có không khí trong lành!</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- precautions section ends -->
+<!-- symptoms section starts  -->
+
+<section class="symptoms" id="symptoms">
+
+    <h1 class="heading"> Triệu chứng covid-19</h1>
+
+    <div class="column">
+
+        <div class="main-image">
+            <img src="images/main-symp-img.png" alt="">
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/symp-a.png" alt="">
+                <h3>ho khan</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/symp-b.png" alt="">
+                <h3>viêm họng</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/symp-c.png" alt="">
+                <h3>lạnh</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/symp-d.png" alt="">
+                <h3>sốt</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/symp-e.png" alt="">
+                <h3>đau đầu</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/symp-f.png" alt="">
+                <h3>nôn mửa</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- symptoms section ends -->
+
+<!-- chart section starts  -->
+
+<section class="precautions" id="thongke">
+
+    <h1 class="heading">THỐNG KÊ TÌNH HÌNH DỊCH COVID-19 TRÊN ĐỊA BÀN TỈNH Kon TUM</h1>
+
+    <div class="column">
+
+        <div class="box-container">
+
+            <h3 class="title">SỐ CA MẮC COVID-19 TẠI TỈNH KON TUM THÁNG 5/2021</h3>
+
+
+            <div class="box">
+                <img src="images/day.jpg" alt="">
+                <div class="info">
+                    <h3>Số ca mắc mới từ 17h, 22/11 đến 17h, 23/11 </h3>
+                    <p class="text11">Tổng số ca ghi nhận: 33 ca, trong đó:</p>
+                    <p>Số ca ghi nhận tại các chốt kiểm soát: 30 ca</p>
+                    <p>Số ca ghi nhận trong cộng đồng: 3 ca</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/week.jpg" alt="">
+                <div class="info">
+                    <h3>Tổng số ca mắc trong tuần (22/11 - 28/11)</h3>
+                    <p>Tổng số ca ghi nhận: 56 ca, trong đó:</p>
+                    <p>Số ca ghi nhận tại các chốt kiểm soát: 47 ca</p>
+                    <p>Số ca ghi nhận trong cộng đồng: 9 ca</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/month.jpg" alt="">
+                <div class="info">
+                    <h3>Tổng số ca mắc trong tháng 5 năm 2021</h3>
+                    <p>Tổng số ca ghi nhận: 56 ca, trong đó:</p>
+                    <p>Số ca ghi nhận tại các chốt kiểm soát: 47 ca</p>
+                    <p>Số ca ghi nhận trong cộng đồng: 9 ca</p>
+                </div>
+            </div>
+        
+
+        </div>
+
+        <div class="box-container">
+
+            <h3 class="title">BIỂU ĐỒ TÌNH HÌNH DỊCH COVID-19 TẠI TỈNH KON TUM</h3>
+
+         <div class="box-container">
+            <canvas id="myChart" height="300" width="350"></canvas>
+        </div>
+
+        <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+        // Global Options
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 14;
+        Chart.defaults.global.defaultFontColor = '#777';
+
+        let massPopChart = new Chart(myChart, {
+        type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data:{
+        labels:['Số ca mắc', 'Số ca đang cách ly', 'Số ca đang điều trị', 'Số ca khỏi bệnh', 'Số ca tử vong'],
+       
+        datasets:[{
+          label:'Số người',
+          data:[
+            80,
+            181,
+            52,
+            28,
+            0
+          ],
+          //backgroundColor:'green',
+          backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)'
+           
+          ],
+          borderWidth:1,
+          borderColor:'#777',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#000'
+        }]
+        },
+        options:{
+        title:{
+          display:true,
+          fontSize:25
+
+        },
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'#000'
+          }
+        },
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },
+        tooltips:{
+          enabled:true
+        }
+        }
+        });
+        </script>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- chart section ends -->
+
+<!-- doctor section start  -->
+
+<section class="doctor" id="doctor">
+
+    <h1 class="heading">Tư vấn & chuyên gia</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/doc1.png" alt="">
+            <h3>Trần Chí Cường</h3>
+            <span>Chuyên Khoa Dược</span>
+            <div class="share">
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="https://www.facebook.com/manh.chu.18041" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/doc2.png" alt="">
+            <h3>Lê Trịnh Thủy Tiên</h3>
+            <span>Chuyên Khoa Dinh Dưỡng</span>
+            <div class="share">
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/doc3.png" alt="">
+            <h3>Hình Thị Thu Ba</h3>
+            <span>Chuyên khoa hô hấp</span>
+            <div class="share">
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- doctor section ends -->
+
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="tb">TRANG THÔNG TIN VỀ TÌNH HÌNH DỊCH COVID-19 TỈNH KON TUM</h3>
+            <a href="#" class="tb">Quản lý và nhập tin: Ban biên tập Trang TTĐT Sở Y tế tỉnh Kon Tum</a>
+            <a href="#" class="tb">Địa chỉ: Địa chỉ: 808 Phan Đình Phùng - TP Kon Tum - Tỉnh Kon Tum</a>
+            <a href="#" class="tb">Điện thoại: 0260 3.863048; Email: soyte-kontum@kontum.gov.vn</a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- footer section ends -->
+
+<!-- scroll top  -->
+
+<a href="#home" class="scroll-top">
+    <img src="images/scroll-img.png" alt="">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
